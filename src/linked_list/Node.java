@@ -1,8 +1,8 @@
 package linked_list;
 
 public class Node {
-    private int value;
-    private   Node next;
+      private int value;
+     Node next;
 
     public Node(int value) {
         this.value = value;
@@ -22,5 +22,13 @@ public class Node {
 
     public void setValue(int value) {
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "value=" + value +
+                ", next=" + next +
+                '}';
     }
 }
