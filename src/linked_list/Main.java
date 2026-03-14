@@ -7,8 +7,11 @@ public class Main {
         linkedList.append(5);
         linkedList.append(6);
         linkedList.append(7);
-        linkedList.get();
+        linkedList.printList();
         Node node = linkedList.removeLast();
         System.out.println(node.getValue() + "  is deleted");
+        linkedList.prepend(19);
+        linkedList.printList();
+        System.out.println( "\n"+ linkedList.get(1).getValue());
     }
 }
